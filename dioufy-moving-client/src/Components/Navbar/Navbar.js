@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const routes = [
         {
-            name: "Qui sommes nous ?",
+            name: "A propos",
             path: "#"
         },
         {
@@ -47,6 +47,7 @@ const Navbar = () => {
                     <input className='login-btn' type="button" value='Se connecter'/>
                 </div>
                 <div className="signup-container-btn">
+                    <i class="fa-solid fa-right-to-bracket"></i>
                     <input className='signup-btn' type="button" value="S'inscrire"/>
                 </div>
             </div>

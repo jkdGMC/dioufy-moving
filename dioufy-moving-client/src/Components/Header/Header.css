@@ -1,13 +1,13 @@
 .header{
     position: relative;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     width: 100%;
     height: 768px;
     background-image: url('../../assets/images/header-img.png');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
 }
 
 .header-desc{
@@ -16,11 +16,55 @@
     color: white;
 }
 
+.header-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-image .truck-icon{
+    font-size: 5em;
+    text-align: center;
+}
+
+.header-image h1{
+    font-size: 50px;
+    font-style: italic;
+}
+
 .header-desc-container{
     position: absolute;
-    top: 45%;
+    top: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.header-btn-container {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.header-btn-container input{
+    cursor: pointer;
+    width: 15rem;
+    height: 3.5em;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-btn-container .header-qsn-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.header-btn-container .header-cno-btn{
+    border: 1px solid #3f3f3f;
 }
