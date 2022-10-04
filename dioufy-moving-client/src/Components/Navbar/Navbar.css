@@ -22,9 +22,7 @@
 
 .navbar ul{
     display: flex;
-    width: 35rem;
     list-style-type: none;
-    justify-content: space-around;
 }
 
 .navbar ul li{
@@ -33,6 +31,7 @@
     font-size: 1.3em;
     font-weight: 500;
     color: #3f3f3f;
+    margin-right: 15px;
 }
 
 .navbar ul li::after{

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../Assets/main-logo/black.svg'
+import logo from '../../assets/main-logo/black.svg'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const routes = [
         {
-            name: "A propos",
+            name: "Qui sommes nous ?",
             path: "#"
         },
         {
