@@ -9,6 +9,25 @@ const Navbar = () => {
     const background = () => (window.scrollY >=50) ? setNavbar(true) : setNavbar(false)
     window.addEventListener('scroll', background)
 
+    const routes = [
+        {
+            name: "A propos",
+            path: "#"
+        },
+        {
+            name: "Guide déménagement",
+            path: "#"
+        },
+        {
+            name: "Offres",
+            path: "#"
+        },
+        {
+            name: "Contact",
+            path: "#"
+        },
+    ]
+
   return (
     <div className='Navbar'>
          <nav className={navbar ? 'navbar active' : 'navbar'}>
@@ -17,10 +36,9 @@ const Navbar = () => {
             </div>
             <div className="navigation-panel">
                 <ul>
-                    <li>Accueil</li>
-                    <li>A propos</li>
-                    <li>Offres</li>
-                    <li>Contact</li>
+                {
+                    routes.map((nav,index) => (<li key={index}>{nav.name}</li>))
+                }
                 </ul>
             </div>
             <div className="btn-panel">
