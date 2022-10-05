@@ -3,7 +3,6 @@ import './Header.css'
 import Navbar from '../Navbar/Navbar'
 
 const Header = () => {
-
   return (
     <div className='header'>
       <Navbar />
@@ -20,7 +19,6 @@ const Header = () => {
             <input type="button" className='btn header-qsn-btn' value="Qui sommes nous ?"/>
             <input type="button" className='btn header-cno-btn' value="Consulter nos offres"/>
           </div>
-
         </div>
       </div>
     </div>

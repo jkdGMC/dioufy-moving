@@ -1,0 +1,15 @@
+.a-propos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #3f3f3f;
+}
+
+.a-propos-title{
+    margin-top: 3em;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}

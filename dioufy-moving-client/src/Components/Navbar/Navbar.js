@@ -3,10 +3,9 @@ import logo from '../../assets/main-logo/black.svg'
 import './Navbar.css'
 
 const Navbar = () => {
-
     const [navbar, setNavbar] = useState(false);
 
-    const background = () => (window.scrollY >=50) ? setNavbar(true) : setNavbar(false)
+    const background = () => (window.scrollY >=45) ? setNavbar(true) : setNavbar(false)
     window.addEventListener('scroll', background)
 
     const routes = [
