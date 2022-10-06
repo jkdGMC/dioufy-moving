@@ -1,13 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Header.css'
 import Navbar from '../Navbar/Navbar'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const Header = () => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000
+    })
+  }, []);
+
   return (
-    <div className='header'>
+    <div  className='header'>
       <Navbar />
       <div className="header-desc">
-        <div className="header-desc-container">
+        <div data-aos="fade-up" className="header-desc-container">
           <div className="header-image">
             <i className="fa-sharp fa-solid fa-truck truck-icon"></i>
             <h1>DIOUFY MOVING</h1>

@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './AproposSection.css'
 import aproposLogo from '../../../assets/images/apropos-logo.png'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const AproposSection = () => {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000
+    })
+  }, [])
+  
+  
   return (
     <div className='a-propos-section'>
-      <div className="apropos-img"></div>
-      <div className="a-propos-text">
+      <div data-aos="fade-right" className="apropos-img"></div>
+      <div data-aos="flip-left" data-aos-delay="1250" className="a-propos-text">
         <div className="a-propos-text-title">
           <img className='apropos-logo' src={aproposLogo} alt="A propos logo" height='100' />
           <h1>DIOUFY MOVING</h1>
