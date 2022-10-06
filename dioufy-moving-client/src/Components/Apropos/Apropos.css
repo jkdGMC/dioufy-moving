@@ -3,7 +3,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #3f3f3f;
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    
 }
 
 .a-propos-title{
@@ -13,3 +15,4 @@
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
 }
+
