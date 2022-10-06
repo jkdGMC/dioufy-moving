@@ -46,9 +46,7 @@ const Navbar = () => {
             </div>
             <div className="navigation-panel">
                 <ul>
-                {
-                    routes.map((nav,index) => (<li key={index}>{nav.name}</li>))
-                }
+                {routes.map((nav,index) => (<li key={index}>{nav.name}</li>))}
                 </ul>
             </div>
             <div className="btn-panel">
