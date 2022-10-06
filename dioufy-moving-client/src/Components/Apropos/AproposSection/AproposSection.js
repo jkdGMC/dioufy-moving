@@ -16,8 +16,8 @@ const AproposSection = () => {
   
   return (
     <div className='a-propos-section'>
-      <div data-aos="fade-right" className="apropos-img"></div>
-      <div data-aos="flip-left" data-aos-delay="1250" className="a-propos-text">
+      <div data-aos="zoom-in" data-aos-delay="800" className="apropos-img"></div>
+      <div data-aos="flip-left" data-aos-delay="2000" className="a-propos-text">
         <div className="a-propos-text-title">
           <img className='apropos-logo' src={aproposLogo} alt="A propos logo" height='100' />
           <h1>DIOUFY MOVING</h1>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 768px;
+    height: 100vh;
     background-image: url('../../assets/images/header-img.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,7 @@
 }
 
 .header-image .truck-icon{
+    font-style: italic;
     font-size: 5em;
     text-align: center;
 }

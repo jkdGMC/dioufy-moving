@@ -17,17 +17,17 @@ const Header = () => {
     <div  className='header'>
       <Navbar />
       <div className="header-desc">
-        <div data-aos="fade-up" className="header-desc-container">
+        <div className="header-desc-container">
           <div className="header-image">
-            <i className="fa-sharp fa-solid fa-truck truck-icon"></i>
-            <h1>DIOUFY MOVING</h1>
+            <i data-aos="fade-right" data-aos-delay="300" className="fa-sharp fa-solid fa-truck-fast truck-icon"></i>
+            <h1 data-aos="fade-up" data-aos-delay="900">DIOUFY MOVING</h1>
           </div>
-          <div className="header-txt">
+          <div data-aos="fade-up" data-aos-delay="1200" className="header-txt">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, at! Rem eius ullam alias, veniam inventore obcaecati iusto sint? Et tenetur optio nam debitis, quasi rem labore obcaecati exercitationem ratione.</p>
           </div>
           <div className="header-btn-container">
-            <input type="button" className='btn header-qsn-btn' value="Qui sommes nous ?"/>
-            <input type="button" className='btn header-cno-btn' value="Consulter nos offres"/>
+            <input data-aos="fade-right" data-aos-delay="2400" type="button" className='btn header-qsn-btn' value="Qui sommes nous ?"/>
+            <input data-aos="fade-left" data-aos-delay="2400" type="button" className='btn header-cno-btn' value="Consulter nos offres"/>
           </div>
         </div>
       </div>
