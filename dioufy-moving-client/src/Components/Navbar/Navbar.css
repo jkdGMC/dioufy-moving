@@ -16,7 +16,11 @@
 
 .sticky{
     height: 3rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255, .96);
+}
+
+.navbar-container{
+    width: 70%;
 }
 
 .logo-container img{
