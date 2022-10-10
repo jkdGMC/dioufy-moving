@@ -3,9 +3,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #74ebd5;
-    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
-    
+    background: #16222A;
+    background: linear-gradient(to right, #3A6073, #16222A);
 }
 
 .a-propos-title{
