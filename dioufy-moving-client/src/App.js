@@ -3,6 +3,7 @@ import React from 'react';
 import Apropos from './Components/Apropos/Apropos';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
+import Contact from './Components/Contact/Contact';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
     </LazyLoadComponent>
       <Apropos />
+      <Contact />
       <Footer />
     </div>
   );

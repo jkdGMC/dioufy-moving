@@ -1,0 +1,68 @@
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+}
+
+.Contact ul{
+    list-style-type: none;
+}
+
+.Contact ul li{
+    display: flex;
+}
+
+.Contact ul li p{
+    padding-top: 10px;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.info-social{
+    position: absolute;
+    display: flex;
+    bottom: 5rem;
+}
+
+.contact-container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: 80vh;
+    background: #16222A;
+    background: linear-gradient(to right, #3A6073, #16222A);
+}
+
+.contact-info{
+    left: 0;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background: grey;
+}
+
+.contact-info h2{
+    margin-top: 20%;
+    text-align: center;
+}
+
+.contact-form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 80%;
+    height: 80%;
+}
