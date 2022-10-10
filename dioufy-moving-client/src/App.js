@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './App.css';
 import Apropos from './Components/Apropos/Apropos';
 import Footer from './Components/Footer/Footer';
