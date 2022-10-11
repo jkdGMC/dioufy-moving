@@ -8,6 +8,7 @@ import Contact from './Components/Contact/Contact';
 import './App.css';
 
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import Offers from './Components/Offers/Offers';
 
 
 function App(){
@@ -18,6 +19,7 @@ function App(){
       <Header />
     </LazyLoadComponent>
     <Apropos />
+    <Offers />
     <Contact />
     <Footer />
     </div>

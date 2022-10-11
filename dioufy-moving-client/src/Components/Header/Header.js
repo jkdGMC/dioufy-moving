@@ -26,8 +26,8 @@ const Header = () => {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, at! Rem eius ullam alias, veniam inventore obcaecati iusto sint? Et tenetur optio nam debitis, quasi rem labore obcaecati exercitationem ratione.</p>
           </div>
           <div className="header-btn-container">
-            <input data-aos="fade-right" data-aos-delay="2400" type="button" className='btn header-qsn-btn' value="Qui sommes nous ?"/>
-            <input data-aos="fade-left" data-aos-delay="2400" type="button" className='btn header-cno-btn' value="Consulter nos offres"/>
+            <input data-aos="fade-right" data-aos-delay="2400" type="button" className='btn header-qsn-btn' value="Demander un devis" />
+            <input data-aos="fade-left" data-aos-delay="2400" type="button" className='btn header-cno-btn' value="Consulter nos offres" />
           </div>
         </div>
       </div>

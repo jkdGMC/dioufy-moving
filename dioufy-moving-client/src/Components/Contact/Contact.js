@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './Contact.css'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
@@ -9,6 +11,14 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailSent, setEmailSent] = useState(false);
+
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000
+    })
+  }, []);
+
 
 
   const submit = () => {
@@ -37,9 +47,9 @@ const Contact = () => {
 
   return (
     <div className='Contact'>
-      <div className="contact-container">
+      <div data-aos="fade-in" className="contact-container">
         <div className="contact-info">
-          <h2>Contactez nous ici !</h2>
+          <h2>Contactez nous ici ...</h2>
           <ul className='info-section'>
             <li>
               <i className="fa-sharp fa-solid fa-map-location-dot"></i>
@@ -48,7 +58,7 @@ const Contact = () => {
                 Sacré Coeur 3 Pyrotechnie <br/>
                 Dakar, DK <br/>
                 99999
-              </p>
+              </p>  
             </li>
             <li>
               <i className="fa-regular fa-envelope"></i>
@@ -75,6 +85,7 @@ const Contact = () => {
                 placeholder="Prénom et Nom"
                 value={name}
                 onChange={e => setName(e.target.value)} />
+              
               
               <input 
                 type="email"

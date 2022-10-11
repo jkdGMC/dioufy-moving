@@ -1,0 +1,27 @@
+.Offers{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.offers-header{
+    text-align: center;
+}
+
+.offers-list{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+}
