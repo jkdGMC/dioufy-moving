@@ -1,8 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
+
+
+  const submit = () => {
+    if (name && email && message) {
+        const serviceId = 'service_id';
+        const templateId = 'template_id';
+        const userId = 'user_id';
+        const templateParams = {
+            name,
+            email,
+            message
+        };
+
+        emailjs.send(serviceId, templateId, templateParams,   )
+            .then(response => console.log(response))
+            .then(error => console.log(error));
+
+        setName('');
+        setEmail('');
+        setMessage('');
+        setEmailSent(true);
+
+    } else
+        alert('Veillez remplir tous les champs !');
+}
 
   return (
     <div className='Contact'>
@@ -38,25 +69,27 @@ const Contact = () => {
         <div className='contact-form'>
           <div className="form-container">
             <h2>Envoyez nous un message</h2>
-            <div className="input-container">
-              <span>Prénom</span><br />
-              <input type="text" name="" require />
+            <form>
+              <input
+                type="text"
+                placeholder="Prénom et Nom"
+                value={name}
+                onChange={e => setName(e.target.value)} />
+              
+              <input 
+                type="email"
+                placeholder="Votre adresse mail"
+                value={email}
+                onChange={e => setEmail(e.target.value)} />
 
-              <span>Nom</span><br />
-              <input type="text" name="" require />
+              <textarea
+                placeholder="Votre message ..."
+                value={message}
+                onChange={e => setMessage(e.target.value)}>
+              </textarea>
 
-              <span>Email</span><br />
-              <input type="text" name="" require />
-
-              <span>Numéro de téléphone</span><br />
-
-              <input type="text" name="" require />
-
-              <span>Ecrivez votre message ici ...</span><br />
-              <textarea name="" require='true'></textarea>
-
-              <input type="submit" value="ENVOYER" />
-            </div>
+              <button onClick={submit}>ENVOYER</button>
+            </form>
           </div>
         </div>
       </div>

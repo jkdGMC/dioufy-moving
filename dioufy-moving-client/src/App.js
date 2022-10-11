@@ -10,15 +10,16 @@ import './App.css';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 
-function App() {
+function App(){
+
   return (
     <div className="App">
     <LazyLoadComponent>
       <Header />
     </LazyLoadComponent>
-      <Apropos />
-      <Contact />
-      <Footer />
+    <Apropos />
+    <Contact />
+    <Footer />
     </div>
   );
 }
