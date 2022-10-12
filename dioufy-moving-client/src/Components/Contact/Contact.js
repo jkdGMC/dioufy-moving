@@ -49,7 +49,7 @@ const Contact = () => {
     <div className='Contact'>
       <div data-aos="fade-in" className="contact-container">
         <div className="contact-info">
-          <h2>Contactez nous ici ...</h2>
+          <h2>Contactez nous et retrouvez nous ..</h2>
           <ul className='info-section'>
             <li>
               <i className="fa-sharp fa-solid fa-map-location-dot"></i>
@@ -78,7 +78,7 @@ const Contact = () => {
         </div>
         <div className='contact-form'>
           <div className="form-container">
-            <h2>Envoyez nous un message</h2>
+            <h2>Des réclamations sur le déroulement du déménagement ?</h2>
             <form>
               <input
                 type="text"
@@ -86,12 +86,18 @@ const Contact = () => {
                 value={name}
                 onChange={e => setName(e.target.value)} />
               
-              
               <input 
                 type="email"
                 placeholder="Votre adresse mail"
                 value={email}
                 onChange={e => setEmail(e.target.value)} />
+
+                <select className='pack-select' >
+                <option value="" disabled>Type d'offre du déménagement</option>
+                  <option value="yobulma">Pack Yobulma</option>
+                  <option value="standard">Pack Standard</option>
+                  <option value="deluxe">Pack Deluxe</option>
+                </select>
 
               <textarea
                 placeholder="Votre message ..."

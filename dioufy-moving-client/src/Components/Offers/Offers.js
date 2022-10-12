@@ -9,29 +9,31 @@ const Offers = () => {
 
   let offersList = [
     {
-      type: 'Yobulma',
+      type: 'Pack Yobulma',
       services: [
         'Chargement - Transport - Déchargement',
         'Transport et equipe dévouée',
       ]
     },
     {
-      type: 'Standard',
-      services: [
-        'Chargement - Transport - Déchargement',
-        'Transport et equipe dévouée',
-        'Assistance à la clientèle'
-      ]
-    },
-    {
-      type: 'Yobulma',
+      type: ' Pack Standard',
       services: [
         'Chargement - Transport - Déchargement',
         'Transport et equipe dévouée',
         'Assistance à la clientèle',
+        'Emballage'
+      ]
+    },
+    {
+      type: 'Pack Deluxe',
+      services: [
         'Chargement - Transport - Déchargement',
         'Transport et equipe dévouée',
-        'Assistance à la clientèle'
+        'Assistance à la clientèle',
+        'Emballage',
+        'Déballage',
+        'Montage et Démontage de meuble',
+        'Assurance premium'
       ]
     }
   ]

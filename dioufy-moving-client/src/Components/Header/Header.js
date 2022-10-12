@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div  className='header'>
+    <div id='propos' className='header'>
       <Navbar />
       <div className="header-desc">
         <div className="header-desc-container">

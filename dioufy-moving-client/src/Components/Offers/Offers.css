@@ -11,11 +11,21 @@
     display: flex;
     width: 80%;
     flex-direction: column;
-    height: 80vh;
+    height: 85vh;
 }
 
 .offers-header{
     text-align: center;
+}
+
+.offers-header h1{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.offers-header p{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .offers-list{

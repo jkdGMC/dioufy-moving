@@ -13,7 +13,7 @@ const OfferCard = ({type,services}) => {
             <div className='services-container'>
                 <ul>
                     {services.map((service, index) => (
-                        <div className='service' key={index} ><i class="fa-solid fa-check"></i><li>{service}</li></div>))}
+                        <div className='service' key={index} ><i className="fa-solid fa-check"></i><li>{service}</li></div>))}
                 </ul>
             </div>
         </div>

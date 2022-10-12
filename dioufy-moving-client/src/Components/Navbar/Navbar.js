@@ -15,19 +15,19 @@ const Navbar = () => {
     const routes = [
         {
             name: "A propos",
-            path: "#"
+            path: "/#propos"
         },
         {
             name: "Guide déménagement",
-            path: "#"
+            path: "/#guidedemenagement"
         },
         {
             name: "Offres",
-            path: "#"
+            path: "/#offres"
         },
         {
             name: "Contact",
-            path: "#"
+            path: "/#contact"
         },
     ]
 
@@ -46,7 +46,12 @@ const Navbar = () => {
                 </div>
                 <div className="navigation-panel">
                     <ul>
-                        {routes.map((nav,index) => (<li key={index}>{nav.name}</li>))}
+                        {routes.map((nav,index) => (
+                            <li key={index}>
+                                    {nav.name}
+                            </li>
+                            )
+                        )}
                     </ul>
                 </div>
                 <div className="btn-panel">
@@ -55,7 +60,7 @@ const Navbar = () => {
                         <input className='login-btn' type="button" value='Se connecter'/>
                     </div>
                     <div className="signup-container-btn">
-                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <i className="fa-solid fa-right-to-bracket"></i>
                         <input className='signup-btn' type="button" value="S'inscrire"/>
                     </div>
                 </div>
