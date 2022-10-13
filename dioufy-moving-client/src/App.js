@@ -1,27 +1,26 @@
 import React from 'react';
 
-import Apropos from './Components/Apropos/Apropos';
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
-import Contact from './Components/Contact/Contact';
-import Offers from './Components/Offers/Offers';
+import LandingPage from './Pages/LandingPage/LandingPage';
+import Page404 from './Pages/Page404/Page404'
+
+import { Routes, Route } from 'react-router-dom';
 
 
 import './App.css';
 
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+
 
 function App(){
 
   return (
     <div className="App">
-    <LazyLoadComponent>
-      <Header />
-    </LazyLoadComponent>
-    <Apropos />
-    <Offers />
-    <Contact />
-    <Footer />
+
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/*' element={<Page404 />} />
+      </Routes>
+
+      
     </div>
   );
 }

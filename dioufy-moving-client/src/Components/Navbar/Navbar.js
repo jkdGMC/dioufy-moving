@@ -11,24 +11,24 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
 
     const background = () => (window.scrollY >=45) ? setNavbar(true) : setNavbar(false)
-    window.addEventListener('scroll', background)
+    window.addEventListener('scroll', background)   
 
     const routes = [
         {
             name: "A propos",
-            path: "#propos/"
+            path: "#propos"
         },
         {
             name: "Guide déménagement",
-            path: "#guidedemenagement/"
+            path: "#guidedemenagement"
         },
         {
             name: "Offres",
-            path: "#offres/"
+            path: "#offres"
         },
         {
             name: "Contact",
-            path: "#contact/"
+            path: "#contact"
         }
     ]
 
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <ul>
                         {routes.map((nav,index) => (
                             <li key={index}>
-                                <a href={nav.path} >{nav.name}</a>
+                                <a href={nav.path}>{nav.name}</a>
                             </li>
                             )
                         )}

@@ -39,7 +39,7 @@ const Offers = () => {
   ]
 
   return (
-    <div id='' className='Offers'>
+    <div id='offres' className='Offers'>
       <div className="offers-container">
         <div className="offers-header">
           <h1>NOS OFFRES</h1>

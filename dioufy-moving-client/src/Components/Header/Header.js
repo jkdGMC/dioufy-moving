@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import './Header.css'
-import Navbar from '../Navbar/Navbar'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -15,7 +14,6 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <Navbar />
       <div className="header-desc">
         <div className="header-desc-container">
           <div className="header-image">
