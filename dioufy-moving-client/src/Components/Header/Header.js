@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div id='propos' className='header'>
+    <div className='header'>
       <Navbar />
       <div className="header-desc">
         <div className="header-desc-container">
@@ -27,7 +27,7 @@ const Header = () => {
           </div>
           <div className="header-btn-container">
             <input data-aos="fade-right" data-aos-delay="2400" type="button" className='btn header-qsn-btn' value="Demander un devis" />
-            <input data-aos="fade-left" data-aos-delay="2400" type="button" className='btn header-cno-btn' value="Consulter nos offres" />
+            <input data-aos="fade-left" data-aos-delay="2400" type="button" className='btn header-cno-btn' value="Réclammation ?" />
           </div>
         </div>
       </div>

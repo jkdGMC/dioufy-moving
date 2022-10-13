@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'
 
 
 const Navbar = () => {
+
     const [navbar, setNavbar] = useState(false);
 
     const background = () => (window.scrollY >=45) ? setNavbar(true) : setNavbar(false)
@@ -15,20 +16,20 @@ const Navbar = () => {
     const routes = [
         {
             name: "A propos",
-            path: "/#propos"
+            path: "#propos/"
         },
         {
             name: "Guide déménagement",
-            path: "/#guidedemenagement"
+            path: "#guidedemenagement/"
         },
         {
             name: "Offres",
-            path: "/#offres"
+            path: "#offres/"
         },
         {
             name: "Contact",
-            path: "/#contact"
-        },
+            path: "#contact/"
+        }
     ]
 
     useEffect(() => {
@@ -42,13 +43,13 @@ const Navbar = () => {
     <div className='Navbar'>
         <nav data-aos="fade-down" className={navbar ? 'navbar active sticky ' : 'navbar'}>
                 <div className="logo-container">
-                    <img className="dioufy-moving-logo" src={logo} alt="Dioufy moving" />
+                    <img className="dioufy-moving-logo" src={logo} alt="Dioufy Moving" />
                 </div>
                 <div className="navigation-panel">
                     <ul>
                         {routes.map((nav,index) => (
                             <li key={index}>
-                                    {nav.name}
+                                <a href={nav.path} >{nav.name}</a>
                             </li>
                             )
                         )}

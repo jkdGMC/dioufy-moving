@@ -93,7 +93,7 @@ const Contact = () => {
                 onChange={e => setEmail(e.target.value)} />
 
                 <select className='pack-select' >
-                <option value="" disabled>Type d'offre du déménagement</option>
+                <option value="" selected>Type d'offre du déménagement</option>
                   <option value="yobulma">Pack Yobulma</option>
                   <option value="standard">Pack Standard</option>
                   <option value="deluxe">Pack Deluxe</option>
