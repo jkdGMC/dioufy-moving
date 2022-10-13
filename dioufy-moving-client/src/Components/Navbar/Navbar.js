@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react'
 import logo from '../../assets/main-logo/black.svg'
 import './Navbar.css'
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-
 
 const Navbar = () => {
 
@@ -31,17 +28,11 @@ const Navbar = () => {
             path: "#contact"
         }
     ]
-
-    useEffect(() => {
-        Aos.init({
-            duration: 2000
-        })
-    }, [])
     
 
   return (
     <div className='Navbar'>
-        <nav data-aos="fade-down" className={navbar ? 'navbar active sticky ' : 'navbar'}>
+        <nav className={navbar ? 'navbar active sticky ' : 'navbar'}>
                 <div className="logo-container">
                     <img className="dioufy-moving-logo" src={logo} alt="Dioufy Moving" />
                 </div>

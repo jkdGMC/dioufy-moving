@@ -38,8 +38,12 @@
     position: relative;
     font-size: 1.3em;
     font-weight: 500;
-    color: #3f3f3f;
     margin-right: 30px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #3f3f3f;
 }
 
 .navbar ul li::after{
