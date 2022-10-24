@@ -28,7 +28,6 @@ const Navbar = () => {
             path: "#contact"
         }
     ]
-    
 
   return (
     <div className='Navbar'>

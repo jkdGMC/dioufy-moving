@@ -25,7 +25,9 @@ const Header = () => {
           </div>
           <div className="header-btn-container">
             <input data-aos="fade-right" data-aos-delay="2400" type="button" className='btn header-qsn-btn' value="Demander un devis" />
-            <input data-aos="fade-left" data-aos-delay="2400" type="button" className='btn header-cno-btn' value="Réclammation ?" />
+            <a href="#contact">
+              <input data-aos="fade-left" data-aos-delay="2400" type="button" className='btn header-cno-btn' value="Réclammation ?" />
+            </a>
           </div>
         </div>
       </div>
