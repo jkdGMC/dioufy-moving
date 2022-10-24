@@ -14,7 +14,7 @@ const Apropos = () => {
   }, []);
   
   return (
-    <div id='propos' className='a-propos'>
+    <div className='a-propos'>
         <h1 data-aos="fade-down" className='a-propos-title'>A propos de nous</h1>
         <AproposSection />
     </div>
