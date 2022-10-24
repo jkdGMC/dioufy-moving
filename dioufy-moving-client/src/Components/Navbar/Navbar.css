@@ -19,10 +19,6 @@
     background-color: rgb(255, 255, 255, .96);
 }
 
-.navbar-container{
-    width: 70%;
-}
-
 .logo-container img{
     width: 80px;
     transform: scale(4);
