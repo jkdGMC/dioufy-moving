@@ -1,4 +1,4 @@
-.Contact{
+#override-tailwindcss .Contact{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -10,15 +10,15 @@
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
 }
 
-.Contact ul{
+#override-tailwindcss .Contact ul{
     list-style-type: none;
 }
 
-.Contact ul li{
+#override-tailwindcss .Contact ul li{
     display: flex;
 }
 
-.Contact ul li p{
+#override-tailwindcss .Contact ul li p{
     padding-top: 10px;
 }
 
@@ -34,7 +34,7 @@
     bottom: 5rem;
 }
 
-.contact-container{
+#override-tailwindcss .contact-container{
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -44,20 +44,20 @@
     background: linear-gradient(to right, #3A6073, #16222A);
 }
 
-.contact-info{
+#override-tailwindcss.contact-info{
     left: 0;
     position: absolute;
     width: 30%;
     height: 100%;
     background: grey;
 }
-
-.contact-info h2{
+ 
+#override-tailwindcss .contact-info h2{
     margin-top: 20%;
     text-align: center;
 }
 
-.contact-form{
+#override-tailwindcss .contact-form{
     position: relative;
     width: 70%;
     display: flex;
@@ -66,25 +66,25 @@
     align-items: center;
 }
 
-.form-container{
+#override-tailwindcss .form-container{
     position: absolute;
     width: 95%;
     height: 95%;
 }
-.form-container h2{
+#override-tailwindcss .form-container h2{
     text-align: center;
 }
 
-form{
+#override-tailwindcss form{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
 }
 
-.pack-select,
-.form-container input,
-textarea {
+#override-tailwindcss .pack-select,
+#override-tailwindcss .form-container input,
+#override-tailwindcss textarea {
     width: 70%;
     height: 3rem;
     font-size: 20px;
@@ -93,14 +93,15 @@ textarea {
     border-radius: 3px;
     padding: 10px 20px;
     margin-bottom: 40px;
+    color: #16222A;
 }
 
-textarea {
+#override-tailwindcss textarea {
     height: 160px;
     resize: vertical;
 }
 
-button {
+#override-tailwindcss button {
     width: 20%;
     padding: 10px;
     border: none;
@@ -115,7 +116,7 @@ button {
     transition: background-color .1s ease-out .1s
 }
 
-button:hover{
+#override-tailwindcss button:hover{
     background-color: rgb(0, 0, 0, 0.8);
     color: rgb(201, 201, 201);
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LandingPage from './Pages/LandingPage/LandingPage';
+import Platform from './Pages/Platform/Platform';
 import Page404 from './Pages/Page404/Page404'
 
 import { Routes, Route } from 'react-router-dom';
@@ -14,6 +15,7 @@ function App(){
     <div className="App">
       <Routes>
         <Route path='/' element={<LandingPage />} />
+        <Route path='/dashboard' element={<Platform />} />
         <Route path='/*' element={<Page404 />} />
       </Routes>
     </div>

@@ -13,7 +13,7 @@ import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 const LandingPage = () => {
   return (
-    <div className='LandingPage'>
+    <div id='override-tailwindcss' className='LandingPage'>
       <Navbar />
       <LazyLoadComponent>
         <Header />
