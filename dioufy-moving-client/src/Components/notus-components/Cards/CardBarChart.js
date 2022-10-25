@@ -1,5 +1,9 @@
 import React from "react";
-import Chart from "chart.js";
+import { Chart, registerables } from "chart.js";
+
+
+
+Chart.register(...registerables)
 
 export default function CardBarChart() {
   React.useEffect(() => {
@@ -95,8 +99,10 @@ export default function CardBarChart() {
         },
       },
     };
+
     let ctx = document.getElementById("bar-chart").getContext("2d");
     window.myBar = new Chart(ctx, config);
+
   }, []);
   return (
     <>
